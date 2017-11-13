@@ -1,0 +1,79 @@
+.form_box
+  display: none
+  width: 100%
+  max-width 600px
+  background-color: #fbfbfb
+  text-align: center
+  .header
+    background-color: #064b8d
+    opacity: 0.77
+    .title
+      color #ffffff
+      margin: 0 auto
+      padding 1em 4px
+    .info
+      padding: 0 2em 2em 2em
+      color #ffffff
+  .body
+    padding 1em 2em
+    .label_service-name
+      font-size: rem(16px)
+      font-weight: 400
+      line-height: 20px
+    .service_name
+      color: #020202
+      font-size: rem(20px)
+      font-weight: 400
+      line-height: 20px
+      padding-bottom: 8px
+      margin-bottom: 8px
+      border-bottom: 1px solid #b4cadb
+    .form-group
+      margin-top: 1.4em
+      &.phone, &.email
+        width: 48%
+        float: left
+        display: inline-block
+      &.email
+        float: right
+      &.submit_box
+        a
+          width: 120px
+      input, textarea
+        margin 4px 0
+        padding-bottom: 8px
+        display: block
+        width: 100%
+        border-bottom: 1px solid #b4cadb
+        border-left: none
+        border-top: none
+        border-right: none
+        text-align: center
+        background: none
+      textarea
+        height: 50px
+  .form-control:focus
+    box-shadow none
+  .form-group
+    position: relative
+    &.textarea
+      .help-block
+        top: 50px
+    .help-block
+      display: block
+      top: 32px
+      font-size: rem(18px)
+      position: absolute
+      text-align: center
+      width: calc(100%)
+  .has-error .form-control, .form-control, .has-error .form-control:focus
+    box-shadow none
+  .alert
+    display: none
+input:focus, input:active, textarea:active, textarea:focus
+  outline none
+  border none
+.alert.alert-error
+  background-color: #dff0d8
+  border-color: #FF0000
+  color: #3c763d

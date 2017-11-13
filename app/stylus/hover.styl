@@ -1,0 +1,36 @@
+.hvr-bounce-to-right:before
+  background: rgba(39,59,249,0.7)
+  bottom: 0
+  content: ""
+  left: 0
+  position: absolute
+  right: 0
+  top: 0
+  transform: scaleX(0)
+  transform-origin: 0 50% 0
+  transition-duration: 0.5s
+  transition-property: transform
+  transition-timing-function: ease-out
+  z-index: -1
+.hvr-bounce-to-right:active:before, .hvr-bounce-to-right:focus:before, .hvr-bounce-to-right:hover:before
+  transform: scaleX(1)
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66)
+.hvr-bounce-to-right
+  box-shadow: 0 0 1px transparent
+  display: inline-block
+  vertical-align: middle
+.hvr-bounce-to-right
+  color #ffffff
+  backface-visibility: hidden
+  position: relative
+  transform: translateZ(0px)
+  transition-duration: 0.5s
+  transition-property: color
+.hvr-bounce-to-right:focus:before
+  background: none
+  transform scaleX(0)
+a.order_btn:focus
+  color #FFFFFF
+  text-decoration none
+.fancybox-close-small, .fancybox-close-small:before
+  outline none

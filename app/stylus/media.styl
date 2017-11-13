@@ -1,0 +1,438 @@
+@media (max-width: 359px)
+  .navbar-toggle
+    margin-left: 1em
+  .header_contacts-mobile
+    ul
+      li
+        &:after
+          right: -14px
+      li + li
+        margin-left: 1em
+@media (max-width: 480px)
+  .order_btn-fixed
+    display: none
+  .content .block_decorated
+    margin-left: 0
+  #portfolio_popup
+    max-width 98%
+  .breadcrumbs
+    text-align: center
+  .navbar li
+    ul
+      top: 0
+      padding 0 0 0 1.8em
+      background: none
+      opacity 1
+      position: relative
+      transform: scale(1) translateY(0%) rotateX(0deg)
+      li
+        &:hover
+          background: none
+          a
+            color: #32cd32
+        & + li
+          box-shadow 0 1px 0 rgba(255, 255, 255, 0.1) inset
+          border-top none
+  .form_box
+    .header
+      .title
+        padding 6px 4px
+      .info
+        padding 0 15px 5px
+    .body
+      .form-group
+        .help-block
+          font-size rem(15px)
+        &.submit_box
+          margin-top: 2em
+          .order_btn
+            margin 15px 0 0
+    .order_btn
+      margin 5px 0
+  .socials_mobile ul.socials
+    margin 8px 0
+    li
+      display: block
+      margin-bottom: 10px
+      &:hover
+        cursor: pointer
+        .icon_fb
+          sprite($icon_fb)
+        .icon_vk
+          sprite($icon_vk)
+        .icon_od
+          sprite($icon_odnoklasniki)
+        .icon_in
+          sprite($icon_instagram)
+      & + li
+        padding-top 10px
+        margin-left: 0
+      .icon
+        margin-right: 10px
+        vertical-align: middle
+        display: inline-block
+      .icon_fb
+        sprite($icon_fb)
+      .icon_vk
+        sprite($icon_vk)
+      .icon_od
+        sprite($icon_odnoklasniki)
+      .icon_in
+        sprite($icon_instagram)
+  header
+    .container_menu
+      padding 0.5em 0
+      margin: 0
+      .logo
+        margin 0
+        max-height: 100%
+        max-width: 100%
+  .navbar
+    display: block
+    margin-top: 1em
+  .navbar-nav
+    margin 0 0 7.5px
+    > li
+      padding: 0
+      display: block
+      &.has_childs:after
+        background: none
+      a
+        line-height 30px
+      & + li
+        margin-left: 0
+        box-shadow 0 1px 0 rgba(255, 255, 255, 0.1) inset
+        &:before
+          display: none
+  .main_slider
+    padding: 0
+    margin 2em 2.8em
+  #portfolio
+    margin 1em
+  .portfolio_slider
+    margin 1em auto
+    .item
+      .screen_box
+        .btn_view
+          visibility visible
+        &:after
+          opacity 0.3
+  .services_box
+    .services_box-item
+      width: 100%
+      & + .services_box-item
+        margin-left: 0
+      .desc
+        min-height 70px
+  .stages_of-work
+    .stages_of-work-item
+      width: 100%
+      & + .stages_of-work-item
+        margin-left: 0
+  #guestbook_carousel-items
+    margin 2em 2.8em
+  .owl-carousel
+    width: auto
+    .owl-item
+      p
+        display: block
+        width: auto
+        font-size rem(24px)
+        line-height 22px
+  .toggle-mnu
+    height: 34px
+    width: 44px
+    z-index 100
+    &:hover
+      cursor: pointer
+  .toggle-mnu span:after, .toggle-mnu span:before
+    content: ""
+    left: 0
+    position: absolute
+    top: -9px
+  .toggle-mnu span:after
+    top: 9px
+  .toggle-mnu span
+    display: block
+    position: relative
+  .toggle-mnu span, .toggle-mnu span:after, .toggle-mnu span:before
+    backface-visibility: hidden
+    background-color: #ffffff
+    border-radius: 2px
+    height: 2px
+    transition: all 0.3s ease 0s
+    width: 100%
+  .toggle-mnu.on span
+    background-color: transparent
+  .toggle-mnu.on span:before
+    transform: rotate(45deg) translate(7px, 6px)
+  .toggle-mnu.on span:after
+    transform: rotate(-45deg) translate(6px, -6px)
+  .navbar-collapse, .socials_mobile
+    background-color: #004D8B
+    border-bottom: 4px solid #32cd32
+    border-top: 4px solid #32cd32
+    height: auto
+    left: 0
+    padding: 2em
+    position: fixed
+    right: 0
+    text-align: left
+    top: 79px
+    transform: translateY(-150%)
+    transition: all 0.3s cubic-bezier(0.395, 0.425, 0.015, 1) 0s
+    z-index: -1
+    box-shadow none
+    overflow hidden
+    opacity 0.95
+    &.on
+      z-index 99
+      display: block
+      transform: translateY(0px)
+  .products_box
+    .plans_item
+      max-width: 100%
+      & + .plans_item
+        margin-left: 0
+@media (min-width: 481px) and (max-width: 767px)
+  .order_btn-fixed
+    display: none
+  .products_box
+    .plans_item + .plans_item
+      margin-left: 0
+  .socials_mobile ul.socials
+    margin 8px 0
+    li
+      display: block
+      margin-bottom: 10px
+      & + li
+        padding-top 10px
+        margin-left: 0
+    .icon
+      margin-right: 10px
+      vertical-align: middle
+      display: inline-block
+  .header_contacts-mobile
+    margin 0.8em 0
+  .toggle-mnu
+    height: 34px
+    width: 44px
+    z-index 100
+    margin 0.8em 0 0.8em 1.5em
+    &:hover
+      cursor: pointer
+  .toggle-mnu span:after, .toggle-mnu span:before
+    content: ""
+    left: 0
+    position: absolute
+    top: -9px
+  .toggle-mnu span:after
+    top: 9px
+  .toggle-mnu span
+    display: block
+    position: relative
+  .toggle-mnu span, .toggle-mnu span:after, .toggle-mnu span:before
+    backface-visibility: hidden
+    background-color: #ffffff
+    border-radius: 2px
+    height: 2px
+    transition: all 0.3s ease 0s
+    width: 100%
+  .toggle-mnu.on span
+    background-color: transparent
+  .toggle-mnu.on span:before
+    transform: rotate(45deg) translate(7px, 6px)
+  .toggle-mnu.on span:after
+    transform: rotate(-45deg) translate(6px, -6px)
+  .navbar-collapse, .socials_mobile
+    background-color: #004D8B
+    border-bottom: 4px solid #32cd32
+    border-top: 4px solid #32cd32
+    height: auto
+    left: 0
+    padding: 2em
+    position: fixed
+    right: 0
+    text-align: left
+    top: 79px
+    transform: translateY(-150%)
+    transition: all 0.3s cubic-bezier(0.395, 0.425, 0.015, 1) 0s
+    z-index: -1
+    box-shadow none
+    overflow hidden
+    opacity 0.95
+    &.on
+      z-index 99
+      display: block
+      transform: translateY(0px)
+  header
+    .container_menu
+      margin: 0
+      .logo
+        max-height: 85px
+        max-width: 160px
+    .navbar
+      display: block
+      margin-top: 1em
+    .navbar-nav
+      margin 0 0 7.5px
+      > li
+        padding: 0
+        display: block
+        &.has_childs:after
+          background: none
+        a
+          line-height 30px
+        & + li
+          margin-left: 0
+          box-shadow 0 1px 0 rgba(255, 255, 255, 0.1) inset
+          &:before
+            display: none
+      ul
+        top: 0
+        padding 0 0 0 1.8em
+        background: none
+        opacity 1
+        position: relative
+        li
+          &:hover
+            background: none
+            a
+              color: #32cd32
+          & + li
+            box-shadow 0 1px 0 rgba(255, 255, 255, 0.1) inset
+            border-top none
+  #guestbook_carousel-items
+    margin 4em
+  .owl-carousel
+    width: auto
+    .owl-item
+      p
+        display: block
+        width: auto
+  .main_slider
+    padding: 0
+    margin 5em
+  .stages_of-work
+    .stages_of-work-item
+      width: 100%
+      & + .stages_of-work-item
+        margin-left: 0
+  .services_box
+    .services_box-item
+      width: 40%
+      .desc
+        padding: 1em
+      & + .services_box-item
+        margin-left: 0
+  .navbar
+    li + li
+      margin-left: 1em
+      &:before
+        left: -12px
+  .portfolio_slider
+    margin 1em auto
+    .item
+      .screen_box
+        .btn_view
+          visibility visible
+        &:after
+          opacity 0.3
+@media (min-width: 768px) and (max-width: 991px)
+  .order_btn-fixed
+    top: 4%
+  header
+    .container_menu
+      .header_contacts
+        margin-top: 10px
+        p
+          margin 0
+          & + p
+            margin-top: 4px
+  .contacts_box
+    li
+      &:hover
+        .icon_up, .icon_phone, .icon_envelope
+          sprite($icon_up)
+        .icon_phone
+          sprite($icon_call_answer)
+        .icon_envelope
+          sprite($icon_envelope)
+      p
+        display: none
+  #guestbook_carousel-items
+    margin 2em 2em
+  .owl-carousel
+    width: auto
+    .owl-item
+      p
+        display: block
+        width: auto
+  .main_slider
+    padding: 0
+    margin 5em
+  .stages_of-work
+    .stages_of-work-item
+      & + .stages_of-work-item
+        margin-left: 3em
+  .services_box
+    .services_box-item
+      width: 30%
+      .desc
+        padding: 1em
+      & + .services_box-item
+        margin-left: 0
+  .navbar
+    > li.has_childs
+      margin-right: 5px
+    li + li
+      margin-left: 1em
+      &:before
+        left: -12px
+  .products_box
+    .plans_item
+      & + .plans_item
+        margin-left: 0.4em
+  .portfolio_slider
+    margin 1em auto
+    .item
+      .screen_box
+        .btn_view
+          visibility visible
+        &:after
+          opacity 0.3
+@media (min-width: 768px) and (max-width: 1024px)
+  .navbar-nav > li.has_childs
+    margin-right: 1.2em
+@media (min-width: 992px) and (max-width: 1199px)
+  header
+    .container_menu
+      .navbar
+        li
+          & + li
+            margin-left: 5px
+            &:before
+              left: -8px
+  .services_box
+    .services_box-item
+      width: 25%
+  .contacts_box
+    li
+      &:hover
+        .icon_up, .icon_phone, .icon_envelope
+          sprite($icon_up)
+        .icon_phone
+          sprite($icon_call_answer)
+        .icon_envelope
+          sprite($icon_envelope)
+      p
+        display: none
+  .portfolio_slider
+    margin 1em auto
+    .item
+      .screen_box
+        .btn_view
+          visibility visible
+        &:after
+          opacity 0.3
+//@media (min-width: 1200px)

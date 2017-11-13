@@ -1,0 +1,16 @@
+.breadcrumbs
+  text-align: left
+  ul
+    padding: 0
+    margin 12px 0 0 0
+    list-style none
+    font-size rem(20px)
+    li
+      display: inline-block
+      position: relative
+      & + li
+        margin-left: 12px
+        &:before
+          content "/"
+          position: absolute
+          left: -12px

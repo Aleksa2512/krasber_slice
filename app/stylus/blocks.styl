@@ -1,0 +1,51 @@
+.content
+  .block_decorated
+    box-shadow: 0 0 5px rgba(0,0,0,0.5)
+    width: 100%
+    max-width 320px
+    display: inline-block
+    margin-bottom 1em
+    margin-left: 0.5em
+    vertical-align: top
+    .title
+      margin: 0
+      color #EFF6FA
+      text-align: center
+      background: #293E4D
+      padding 10px 0
+    .order_box
+      background: #3896c8
+      .order_btn
+        border 1px solid #fff
+        border-radius 2px
+        background: none
+        &:hover
+          background rgba(55, 11, 157, 0.2)
+    .price
+      background: #3896C8
+      padding 0.2em 0
+      p
+        margin 5px auto
+        font-size rem(26px)
+        color #EFF6FA
+        text-align: center
+    .desc, .desc p, .desc ul, .desc ol
+      padding 10px
+      background: #ffffff
+      font-size rem(24px)
+      ul, ol
+        margin 0
+        padding-left: 2em
+      p
+        padding: 0
+    //& + .block_decorated
+    //  margin-left: 1em
+    &.green
+      .price,.order_box
+        background: #009E9C
+    &.cherry
+      .price,.order_box
+        background: #9F5D79
+    &.yellow
+      .price,.order_box
+        background: #FAB15C

@@ -1,0 +1,135 @@
+.nav > li > a:focus
+  background: none
+menu, nav
+  vertical-align: middle
+  padding: 0
+.navbar
+  display: inline-block
+  margin-bottom: 0
+  li
+    position: relative
+    ul
+      opacity 0
+      transform: scale(0.01) translateY(0%) rotateX(0deg)
+      transform-origin: 20% 0 0
+      transition: all 40ms cubic-bezier(0.395, 0.425, 0.015, 1) 0s
+      position: absolute
+      padding: 0
+      left: -1em
+      top: 73px
+      min-width 200px
+      width: auto
+      list-style none
+      background: rgba(47, 106, 154, 0.95) none repeat scroll 0 0
+      z-index -1
+      li
+        text-align: left
+        padding 4px 0
+        & + li
+          margin-left: 0
+          &:before
+            content ""
+         &:hover
+           background: rgba(47, 106, 154, 1) none repeat scroll 0 0
+           a
+             color #ffffff
+             text-decoration: none
+        a
+          display: block
+          line-height 18px
+          color #ffffff
+    &:hover ul
+      transform: scale(1) translateY(0%) rotateX(0deg)
+      z-index 1
+      opacity 1
+    & + li
+      margin-left: 1.5em
+      &:before
+        position: absolute
+        content "/"
+        left: -15px
+        top: 27px
+        color #ffffff
+    a
+      color #ffffff
+.navbar-nav
+  > li
+    padding 1em 0
+    float: none
+    display: inline-block
+    position: relative
+    &.has_childs
+      margin-right: 12px
+      &:after
+        transition all 250ms cubic-bezier(0.395, 0.425, 0.015, 1) 0s
+        content ""
+        position: absolute
+        top: 37px
+        right: -12px
+        sprite($icon_arrow_menu)
+      &:hover
+        &:after
+          transform rotate(180deg)
+    &.active
+      > a
+        color: #32cd32
+    a
+      padding: 2px 6px
+      color: #fdfdfd
+      font-size: rem(22px)
+      font-weight: 400
+      line-height: 41px
+    &:hover
+      background-color: none
+      > a
+        color: #32cd32
+        background: none
+.header_contacts-mobile
+  color: #ffffff
+  float: left
+  font-size: rem(20px)
+  font-weight: 300
+  text-transform: uppercase
+  ul
+    padding: 0
+    margin-top: 4px
+    list-style none
+    li
+      position: relative
+      display: inline-block
+      &:after
+        position: absolute
+        font-size rem(30px)
+        top: -4px
+        right: -18px
+        content "/"
+      & + li
+        margin-left: 1.5em
+        &:before
+          content ""
+      .icon
+        display: inline-block
+        outline none
+      .icon_envelope
+        sprite($icon_envelope_white)
+      .icon_phone
+        sprite($icon_call_answer_white)
+      .icon_share
+        transition: all 5ms cubic-bezier(0.395, 0.425, 0.015, 1) 0s
+        sprite($icon_share)
+        &.on
+          sprite($icon_share_active)
+.navbar-toggle, .navbar-toggle:active, .navbar-toggle:focus
+  background: none
+  border: none
+  outline none
+.navbar-toggle
+  float: left
+  margin-left: 1.5em
+  margin-top: 0
+  margin-right: 0
+  .icon-bar
+    background: #ffffff
+.container_menu
+  .navbar
+    border 0
